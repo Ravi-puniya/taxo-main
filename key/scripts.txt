@@ -1,0 +1,23 @@
+
+
+NubeERP
+------------------------------------------
+keytool -genkey -v -keystore key/upload-nubeerp-keystore.jks -deststoretype pkcs12 -keyalg RSA -keysize 2048 -validity 10000 -alias nubeerp
+-------------------------------------------
+alias: nubeerp
+clave: uR@wi7U@@WFF4#96aOEZ
+Nombre y Apellido: Denis Ruiz Cieza
+Organización: NubeERP
+
+facturaperu
+-------------------------------------------
+keytool -genkey -v -keystore key/upload-facturaperu-keystore.jks -deststoretype pkcs12 -keyalg RSA -keysize 2048 -validity 10000 -alias facturaperu
+-------------------------------------------
+alias: facturaperu
+clave: 3$Xob5W#oBf8b6$i1VrM
+Nombre y Apellido: Humber Sanchez
+Organización: facturaperu
+
+
+// Crear .aab ofuscado
+flutter build appbundle --target-platform android-arm,android-arm64,android-x64 --obfuscate --split-debug-info=./debug
